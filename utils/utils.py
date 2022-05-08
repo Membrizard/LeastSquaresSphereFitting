@@ -5,9 +5,9 @@ import typing
 
 @attr.s(auto_attribs=True)
 class Point:
-    x: float
-    y: float
-    z: float
+    x: float = attr.ib(converter=float)
+    y: float = attr.ib(converter=float)
+    z: float = attr.ib(converter=float)
 
 
 @attr.s(auto_attribs=True)
